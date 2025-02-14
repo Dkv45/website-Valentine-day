@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/flowers.png" type="image/x-icon">
+    <title>Flowers</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Animation</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: black;
+        }
+
+        .heart {
+            position: absolute;
+            color: red;
+            font-size: 20px;
+            animation: fall linear infinite;
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(-100px);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function createHeart() {
+            const heart = document.createElement("div");
+            heart.innerHTML = "❤️";
+            heart.classList.add("heart");
+            document.body.appendChild(heart);
+
+            let startPositionX = Math.random() * window.innerWidth;
+            let duration = Math.random() * 3 + 2; // 2s - 5s
+            let size = Math.random() * 20 + 10; // 10px - 30px
+
+            heart.style.left = `${startPositionX}px`;
+            heart.style.animationDuration = `${duration}s`;
+            heart.style.fontSize = `${size}px`;
+
+            setTimeout(() => {
+                heart.remove();
+            }, duration * 1000);
+        }
+
+        setInterval(createHeart, 200); // Setiap 200ms muncul love baru
+    </script>
+</body>
+</html>
+
+    <div class="greetings">
+    <!-- silahkan menambah kata sesuai keinginan dengan <span>text...</span -->
+        <span>H</span>
+        <span>A</span>
+        <span>P</span>
+        <span>P</span>
+        <span>Y</span>
+        <span>V</span>
+        <span>A</span>
+        <span>L</span>
+        <span>E</span>
+        <span>N</span>
+        <span>T</span>
+        <span>I</span>
+        <span>N</span>
+        <span>E</span>
+    </div>
+    <div class="for">
+        <p class="heartbeat">for HILLYATI RAHMAH MAWWADAH</p>
+
+<style>
+  .heartbeat {
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+    text-align: center;
+    animation: heartbeat 1.5s infinite;
+  }
+
+  @keyframes heartbeat {
+    0% { transform: scale(1); opacity: 1; }
+    25% { transform: scale(1.2); opacity: 0.8; }
+    50% { transform: scale(1); opacity: 1; }
+    75% { transform: scale(1.2); opacity: 0.8; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+</style>
+    </div>
+    <div class="description">
+        <span>Aku punya hadiah spesial buat adekk nihhhh....</span>
+    </div>
+    <div class="button">
+        <button>
+            <a href="flower.html">Klik disini yahh..!</a>
+        </button>
+        
+    </div>
+</body>
+</html>
